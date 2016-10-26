@@ -7,9 +7,9 @@ A simple tool for pasting to https://pbpt.pw
 + sed
 
 ##### Usage:
-pastey [OPTION] [FILE]
--h Shows help
--f Upload file
+pastey [OPTION] [FILE]   
+-h Shows help   
+-f Upload file   
 
 ##### Installation: 
 `git clone https://github.com/TheSinding/pastey`   
