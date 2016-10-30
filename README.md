@@ -1,5 +1,5 @@
 # pastey
-A simple tool for pasting to https://pbpt.pw
+A simple tool for pasting to https://ptpb.pw
 
 
 ##### Dependencies: 
