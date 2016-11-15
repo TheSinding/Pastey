@@ -1,18 +1,26 @@
 #!/bin/sh
+HELP(){
+     	echo "Usage: pastey [OPTION] [FILE]" >&2
+			echo "	-h		Shows this help" >&2
+			echo "	-f [FILE]	Upload file" >&2
+			exit 1
+}
 while getopts ":f:h" opt; do
   case $opt in
+		\?)
+			HELP
+      ;;
     f)
    	 	RETURN=$(curl -F c=@- https://ptpb.pw < $OPTARG 2>&1)
 			URL=$(echo "$RETURN" | sed -n -e 's/^\(url: \)\(.*\)$/\2/p' 2>&1)
 			echo $URL;
-      ;;
-    \?)
-     	echo "Usage: pastey [OPTION] [FILE]"
-			echo "	-h		Shows this help"
-			echo "	-f [FILE]	Upload file"
       ;;
 		:)
 			echo "Option -$OPTARG requires a path to a file"
 			;;
   esac
 done
+
+if (($# == 0)); then
+  HELP
+fi
