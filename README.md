@@ -15,6 +15,5 @@ pastey [OPTION] [FILE]
 ```
 git clone https://github.com/TheSinding/pastey   
 cd pastey   
-chmod +x pastey
-cp pastey /usr/local/bin/
+sudo ./install.sh
 ```   
