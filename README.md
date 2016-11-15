@@ -12,7 +12,9 @@ pastey [OPTION] [FILE]
 -f Upload file   
 
 ##### Installation: 
-`git clone https://github.com/TheSinding/pastey`   
-`cd pastey`   
-`chmod +x pastey`   
-`cp pastey /usr/local/bin/`   
+```
+git clone https://github.com/TheSinding/pastey   
+cd pastey   
+chmod +x pastey
+cp pastey /usr/local/bin/
+```   
